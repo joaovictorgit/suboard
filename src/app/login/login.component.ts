@@ -12,12 +12,12 @@ export class LoginComponent {
   constructor(private router: Router, private adminService: AdminService) {}
 
   logar(f: NgForm) {
-    const email = f.value.email;
+    /*const email = f.value.email;
     const password = f.value.password;
     this.adminService.loginAdmin(email, password).subscribe((response: any) => {
       console.log(response);
       f.resetForm();
-    });
-    //this.router.navigate(['home']);
+    });*/
+    this.router.navigate(['home']);
   }
 }

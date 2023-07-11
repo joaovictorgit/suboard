@@ -35,7 +35,9 @@
               <label class="title-check">Número de Inscritos</label>
             </div>
           </div>
-
+          <div class="bnt-add-user">
+            <button type="submit" id="add-user">Adicionar influenciador</button>
+          </div>
           <div class="container-contacts">
             <label class="lbl-contacts">Contatos</label>
             <div class="networks">
@@ -48,10 +50,35 @@
         </div>
       </div>
       <div class="container-body-home">
-        <h1 class="name-user">Nome usuário</h1>
+        <div class="container-title">
+          <img
+            src="https://as1.ftcdn.net/v2/jpg/02/59/39/46/1000_F_259394679_GGA8JJAEkukYJL9XXFH2JoC3nMguBPNH.jpg"
+            alt="perfil"
+            class="image-user"
+          />
+          <h1 class="name-user">Nome usuário</h1>
+        </div>
 
         <div class="container-items">
-          <h2>Lista de usuários</h2>
+          <div class="grid-list-users">
+            <h2>Lista de influenciadores</h2>
+            <mat-grid-list cols="4" rowHeight="200px" gutterSize="20px">
+              <mat-grid-tile>
+                <div class="item-user">
+                  <img
+                    src="https://as1.ftcdn.net/v2/jpg/02/59/39/46/1000_F_259394679_GGA8JJAEkukYJL9XXFH2JoC3nMguBPNH.jpg"
+                    alt="perfil"
+                    class="image-user-item"
+                  />
+                  <label class="lbl-name-user">João Victor</label>
+                  <div class="container-lbl-aux">
+                    <label class="lbl-aux-user">Canal: @joao</label>
+                    <label class="lbl-aux-user">Inscritos: 1.500</label>
+                  </div>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </div>
         </div>
       </div>
     </div>

@@ -108,6 +108,26 @@
   color: #ffffff;
 }
 
+.bnt-add-user {
+  position: absolute;
+  top: 161px;
+}
+
+#add-user {
+  width: 181px;
+  height: 43px;
+  border: none;
+  cursor: pointer;
+  background: #2357dc;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
 .container-contacts {
   position: absolute;
   top: 700px;
@@ -163,16 +183,32 @@
   flex-direction: column;
 }
 
-.name-user {
+.container-title {
   position: absolute;
-  width: 362px;
-  height: 78px;
   left: 277px;
   top: 21px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-user {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.name-user {
+  width: 362px;
+  height: 78px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 61px;
   display: flex;
   align-items: center;
@@ -184,21 +220,87 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.grid-list-users {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   position: absolute;
   left: 616px;
   top: 136px;
 }
 
-.container-items h2 {
-  width: 454px;
-  height: 70px;
+.grid-list-users h2 {
+  width: 600px;
+  height: 100px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 30px;
   display: flex;
   align-items: center;
-
   color: #000000;
+}
+
+mat-grid-list {
+  position: relative;
+  left: -120px;
+}
+
+mat-grid-tile {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #313545;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.item-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-user-item {
+  position: absolute;
+  top: 15px;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50%;
+}
+
+.lbl-name-user {
+  position: relative;
+  top: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+
+.container-lbl-aux {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+
+.lbl-aux-user {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
 }

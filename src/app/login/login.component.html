@@ -1,0 +1,35 @@
+<html>
+  <head>
+    Login
+  </head>
+  <body>
+    <div class="container-login">
+      <div class="container-data-login">
+        <label class="lbl-title-login">Login</label>
+        <div class="container-form">
+          <form #f="ngForm" (ngSubmit)="logar(f)" class="form-login" novalidate>
+            <input
+              id="email"
+              name="email"
+              ngModel
+              type="text"
+              class="input-form-login"
+              placeholder="E-mail"
+            />
+
+            <input
+              id="password"
+              name="password"
+              ngModel
+              type="password"
+              class="input-form-login"
+              placeholder="Password"
+            />
+            <button class="btn-login" type="submit">Login</button>
+          </form>
+        </div>
+        <a href="#" class="sign-up">Cadastre-se</a>
+      </div>
+    </div>
+  </body>
+</html>

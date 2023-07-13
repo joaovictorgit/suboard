@@ -1,0 +1,98 @@
+<head>
+  <link
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close class="close">
+    <i class="fa fa-close"></i>
+  </button>
+</mat-dialog-actions>
+<h1 class="title-modal" mat-dialog-title>Adicionar usuário</h1>
+<div mat-dialog-content class="body-modal">
+  <div class="container-information-user">
+    <form #f="ngForm" (ngSubmit)="createUser(f)">
+      <div class="item-input">
+        <label>Nome: </label>
+        <input
+          id="name"
+          name="name"
+          ngModel
+          type="text"
+          class="input"
+          placeholder="Digite seu nome"
+          value="João"
+        />
+      </div>
+      <div class="item-input">
+        <label>Email: </label>
+        <input
+          id="email"
+          name="email"
+          ngModel
+          type="email"
+          class="input"
+          placeholder="Digite seu email"
+          value="joao@gmail.com"
+        />
+      </div>
+      <div class="item-input">
+        <label>Password: </label>
+        <input
+          id="password"
+          name="password"
+          ngModel
+          type="password"
+          class="input"
+          placeholder="Digite sua senha"
+          value="12345"
+        />
+      </div>
+      <div class="item-input">
+        <label>Inscritos: </label>
+        <input
+          id="sub"
+          name="sub"
+          ngModel
+          type="number"
+          class="input"
+          placeholder="Digite a quantidade de inscritos"
+          value="1500"
+        />
+      </div>
+      <div class="item-input">
+        <label>Canal: </label>
+        <input
+          id="channel"
+          name="channel"
+          ngModel
+          type="text"
+          class="input"
+          placeholder="Digite seu canal"
+          value="@joao"
+        />
+      </div>
+      <div class="item-input">
+        <label>Categoria: </label>
+        <input
+          id="category"
+          name="category"
+          ngModel
+          type="text"
+          class="input"
+          placeholder="Digite a categoria do seu canal"
+          value="vlog"
+        />
+      </div>
+      <div class="buttons">
+        <!--
+
+          <input type="file" value="Atualizar foto" #fileInput required />
+         -->
+        <button type="submit" class="add-user">Adicionar Usuário</button>
+      </div>
+    </form>
+  </div>
+</div>

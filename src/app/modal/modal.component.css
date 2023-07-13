@@ -1,0 +1,107 @@
+mat-dialog-content {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-modal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Inter";
+}
+
+.body-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  padding: 20px;
+}
+
+.container-information-user {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+
+.container-information-user form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.item-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.item-input label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  color: #000;
+}
+
+.item-input .input {
+  width: 232px;
+  height: 26px;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 24, 88, 0.64);
+  border: none;
+  border-radius: 10px;
+  text-indent: 10px;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+.add-user {
+  width: 125px;
+  height: 39px;
+  background: #87ef00;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  width: 125px;
+  height: 39px;
+  background: #0083ef;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  cursor: pointer;
+}

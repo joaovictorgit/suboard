@@ -1,27 +1,42 @@
 # Suboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Aplicação backend, desenvolvida com Angular, que faz parte do teste de Desenvolvedor Fullstack em Angular.
 
-## Development server
+## Tabela de Conteúdos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Tecnologias Utilizadas](https://chat.openai.com/c/420175f8-6699-4ca1-8222-5d57874f6ad0#tecnologias-utilizadas)
+- [Instalação](https://chat.openai.com/c/420175f8-6699-4ca1-8222-5d57874f6ad0#instala%C3%A7%C3%A3o)
+- [Uso](https://chat.openai.com/c/420175f8-6699-4ca1-8222-5d57874f6ad0#uso)
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Lista das principais tecnologias utilizadas no projeto, como linguagens de programação, frameworks, bibliotecas, etc.
+  - Javascript
+  - Node.js
+  - Typescript
+  - Angular
+  - HttpClient
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Instruções passo a passo sobre como instalar e configurar o projeto localmente.
 
-## Running unit tests
+  - Primeiramente realize o clone do repositório com o comando abaixo:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+        git clone https://github.com/joaovictorgit/suboard.git
 
-## Running end-to-end tests
+  - Em seguida, instale todas as dependências:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+        npm install
 
-## Further help
+## Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Instruções sobre como utilizar o projeto após as configurações iniciais e instalação das dependências forem realizadas.
+
+  - Execução da aplicação:
+
+          ng serve
+
+  - Testes
+
+          ng test

@@ -9,10 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { UserComponent } from './user/user.component';
+import { ModalComponent } from './modal/modal.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent, UserComponent],
+  declarations: [AppComponent, LoginComponent, HomeComponent, ModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,6 +23,8 @@ import { UserComponent } from './user/user.component';
     ReactiveFormsModule,
     MatIconModule,
     MatGridListModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

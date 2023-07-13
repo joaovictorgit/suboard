@@ -4,9 +4,9 @@ Aplicação frontend, desenvolvida com Angular, que faz parte do teste de Desenv
 
 ## Tabela de Conteúdos
 
-- [Tecnologias Utilizadas](https://chat.openai.com/c/420175f8-6699-4ca1-8222-5d57874f6ad0#tecnologias-utilizadas)
-- [Instalação](https://chat.openai.com/c/420175f8-6699-4ca1-8222-5d57874f6ad0#instala%C3%A7%C3%A3o)
-- [Uso](https://chat.openai.com/c/420175f8-6699-4ca1-8222-5d57874f6ad0#uso)
+- Tecnologias Utilizadas
+- Instalação
+- Uso
 
 ## Tecnologias Utilizadas
 

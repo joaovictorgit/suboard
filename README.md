@@ -1,6 +1,6 @@
 # Suboard
 
-Aplicação backend, desenvolvida com Angular, que faz parte do teste de Desenvolvedor Fullstack em Angular.
+Aplicação front, desenvolvida com Angular, que faz parte do teste de Desenvolvedor Fullstack em Angular.
 
 ## Tabela de Conteúdos
 

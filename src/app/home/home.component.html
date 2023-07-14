@@ -97,12 +97,9 @@
             <mat-grid-list cols="4" rowHeight="200px" gutterSize="20px">
               <mat-grid-tile *ngFor="let user of users">
                 <div class="item-user" (click)="openModalUser(user)">
+                  <!--src="https://as1.ftcdn.net/v2/jpg/02/59/39/46/1000_F_259394679_GGA8JJAEkukYJL9XXFH2JoC3nMguBPNH.jpg"-->
                   <img
-                    [src]="
-                      user.photo
-                        ? user.photo
-                        : 'https://as1.ftcdn.net/v2/jpg/02/59/39/46/1000_F_259394679_GGA8JJAEkukYJL9XXFH2JoC3nMguBPNH.jpg'
-                    "
+                    [src]="getImage(user.user_id)"
                     alt="perfil"
                     class="image-user-item"
                   />

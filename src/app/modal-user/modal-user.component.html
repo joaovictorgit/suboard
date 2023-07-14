@@ -73,8 +73,18 @@
         />
       </div>
       <div class="buttons-modal-user">
-        <input type="submit" value="Atualizar" class="update-button-user" />
-        <input type="submit" value="Deletar" class="delete-button-user" />
+        <input
+          type="submit"
+          value="Atualizar"
+          class="update-button-user"
+          (click)="updateModalUser(form)"
+        />
+        <input
+          type="submit"
+          (click)="deleteModalUser(user.user_id)"
+          value="Deletar"
+          class="delete-button-user"
+        />
       </div>
     </form>
   </div>

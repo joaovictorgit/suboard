@@ -5,6 +5,7 @@ import { AdminService } from '../admin/admin.service';
 import { ModalService } from '../modal/modal.service';
 import { NgForm } from '@angular/forms';
 import { UserService } from '../modal-user/user.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
   title = 'Home';
   saveAdmin: any = {};
   users: any[] = [];
+  images: any = {};
   checkbox1 = false;
   checkbox2 = false;
   checkbox3 = false;
@@ -25,7 +27,8 @@ export class HomeComponent implements OnInit {
     private adminService: AdminService,
     private localStorage: LocalStorageService,
     private modalService: ModalService,
-    private modalUserService: UserService
+    private modalUserService: UserService,
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -35,6 +38,11 @@ export class HomeComponent implements OnInit {
     });
     this.adminService.getAllUsers();
     this.saveAdmin = data;
+  }
+
+  getImage(id: any) {
+    let image = `http://localhost:3000/api/admin/image/${JSON.stringify(id)}`;
+    return image;
   }
 
   openModal(): void {
@@ -91,9 +99,6 @@ export class HomeComponent implements OnInit {
       );
     }
     this.filterUsers = aux;
-    /*this.filterUsers = this.users.filter((item: any) => {
-
-    });*/
     this.users = this.filterUsers;
   }
 

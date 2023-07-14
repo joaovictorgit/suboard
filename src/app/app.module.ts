@@ -12,9 +12,10 @@ import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './modal/modal.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ModalUserComponent } from './modal-user/modal-user.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent, ModalComponent],
+  declarations: [AppComponent, LoginComponent, HomeComponent, ModalComponent, ModalUserComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

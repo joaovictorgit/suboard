@@ -4,6 +4,7 @@ import { LocalStorageService } from '../local-storage.service';
 import { AdminService } from '../admin/admin.service';
 import { ModalService } from '../modal/modal.service';
 import { NgForm } from '@angular/forms';
+import { UserService } from '../modal-user/user.service';
 
 @Component({
   selector: 'app-home',
@@ -19,12 +20,12 @@ export class HomeComponent implements OnInit {
   checkbox1 = false;
   checkbox2 = false;
   checkbox3 = false;
-
   constructor(
     private router: Router,
     private adminService: AdminService,
     private localStorage: LocalStorageService,
-    private modalService: ModalService
+    private modalService: ModalService,
+    private modalUserService: UserService
   ) {}
 
   ngOnInit(): void {
@@ -38,6 +39,10 @@ export class HomeComponent implements OnInit {
 
   openModal(): void {
     this.modalService.openModal();
+  }
+
+  openModalUser(user: any): void {
+    this.modalUserService.openModalUser(user);
   }
 
   onCheckboxChange(checkboxNumber: number): void {

@@ -1,0 +1,81 @@
+<head>
+  <link
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close class="close">
+    <i class="fa fa-close"></i>
+  </button>
+</mat-dialog-actions>
+<h1 class="title-modal-user" mat-dialog-title>Informações do usuário</h1>
+<div mat-dialog-content class="body-modal-user">
+  <div class="container-image">
+    <input
+      type="file"
+      value="Upload"
+      (change)="onFileSelected($event)"
+      #fileInput
+      required
+    />
+    <div class="image-user-upload">
+      <img [src]="imageUrl" alt="Imagem" *ngIf="imageUrl" />
+    </div>
+  </div>
+  <div class="container-form-user">
+    <form class="form-user-modal" #form="ngForm">
+      <div class="item-input-user">
+        <span class="lbl-input-user-modal">Nome: </span>
+        <input
+          id="nameUser"
+          name="nameUser"
+          [(ngModel)]="nameUser"
+          type="text"
+          [value]="nameUser"
+        />
+      </div>
+      <div class="item-input-user">
+        <span class="lbl-input-user-modal">Email: </span>
+        <input
+          id="emailUser"
+          name="emailUser"
+          [(ngModel)]="emailUser"
+          type="text"
+        />
+      </div>
+      <div class="item-input-user">
+        <span class="lbl-input-user-modal">Subscribed: </span>
+        <input
+          id="subscribedUser"
+          name="subscribedUser"
+          type="number"
+          [(ngModel)]="subscribedUser"
+        />
+      </div>
+      <div class="item-input-user">
+        <span class="lbl-input-user-modal">Canal: </span>
+        <input
+          id="channelUser"
+          name="channelUser"
+          [(ngModel)]="channelUser"
+          type="text"
+        />
+      </div>
+      <div class="item-input-user">
+        <span class="lbl-input-user-modal">Categoria: </span>
+        <input
+          id="categoryUser"
+          name="categoryUser"
+          [(ngModel)]="categoryUser"
+          type="text"
+        />
+      </div>
+      <div class="buttons-modal-user">
+        <input type="submit" value="Atualizar" class="update-button-user" />
+        <input type="submit" value="Deletar" class="delete-button-user" />
+      </div>
+    </form>
+  </div>
+</div>

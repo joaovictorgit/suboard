@@ -13,13 +13,22 @@
 <h1 class="title-modal-user" mat-dialog-title>Informações do usuário</h1>
 <div mat-dialog-content class="body-modal-user">
   <div class="container-image">
-    <input
-      type="file"
-      value="Upload"
-      (change)="onFileSelected($event)"
-      #fileInput
-      required
-    />
+    <form #uploadForm="ngForm">
+      <input
+        type="submit"
+        class="upload-image-file"
+        value="Atualizar foto"
+        [disabled]="!uploadForm.form.valid"
+      />
+      <input
+        id="fileInput"
+        type="file"
+        value="Upload"
+        (change)="onFileSelected($event)"
+        #fileInput
+        required
+      />
+    </form>
     <div class="image-user-upload">
       <img [src]="imageUrl" alt="Imagem" *ngIf="imageUrl" />
     </div>
@@ -42,6 +51,7 @@
           id="emailUser"
           name="emailUser"
           [(ngModel)]="emailUser"
+          [value]="emailUser"
           type="text"
         />
       </div>
@@ -50,8 +60,9 @@
         <input
           id="subscribedUser"
           name="subscribedUser"
-          type="number"
+          type="text"
           [(ngModel)]="subscribedUser"
+          [value]="subscribedUser"
         />
       </div>
       <div class="item-input-user">
@@ -60,6 +71,7 @@
           id="channelUser"
           name="channelUser"
           [(ngModel)]="channelUser"
+          [value]="channelUser"
           type="text"
         />
       </div>
@@ -69,6 +81,7 @@
           id="categoryUser"
           name="categoryUser"
           [(ngModel)]="categoryUser"
+          [value]="categoryUser"
           type="text"
         />
       </div>

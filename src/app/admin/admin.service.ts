@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { LocalStorageService } from '../local-storage.service';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, catchError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -51,18 +51,34 @@ export class AdminService {
     );
   }
 
-  createImage(id: any, formData: any) {
-    return this.http
-      .post(`${this.url}/admin/${id}/upload`, formData)
-      .subscribe((response) => {
-        console.log('Foi');
-      });
+  createImage(id: any, image: File) {
+    const formData = new FormData();
+    formData.append('image', image);
+    console.log(formData);
+    return this.http.post(
+      `${this.url}/admin/${id}/upload`,
+      image,
+      this.httpOptionsImage
+    );
   }
 
-  updatedUser(id: any, user: any) {
-    return this.http.patch(
+  updatedUser(
+    id: string,
+    name: string,
+    email: string,
+    subscribed: string,
+    channel: string,
+    category: string
+  ): Observable<any> {
+    return this.http.put(
       `${this.url}/admin/user/${id}`,
-      user,
+      JSON.stringify({
+        name,
+        email,
+        subscribed,
+        channel,
+        category,
+      }),
       this.httpOptionAuthorization
     );
   }

@@ -36,7 +36,7 @@ mat-dialog-content {
 }
 
 input[type="file"]::file-selector-button {
-  width: 125px;
+  width: 105px;
   height: 39px;
   background: #0083ef;
   border: none;
@@ -114,6 +114,16 @@ input[type="file"]::file-selector-button {
   width: 98px;
   height: 34px;
   background: #f12727;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.upload-image-file {
+  width: 98px;
+  height: 34px;
+  background: #dbdf08;
   border: none;
   border-radius: 10px;
   color: #fff;
